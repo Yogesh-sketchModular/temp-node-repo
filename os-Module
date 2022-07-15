@@ -1,0 +1,10 @@
+const os=require('os');
+console.log(os.uptime());
+
+var currentOs={
+    name:os.type(),
+    release:os.release(),
+    totalMemory:os.totalmem(),
+    freeMemory:os.freemem()
+};
+console.log(currentOs);
